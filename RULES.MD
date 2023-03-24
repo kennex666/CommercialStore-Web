@@ -10,12 +10,12 @@ All members in team.
 
 ## List Rules
 
-1. HTML Rules[^1] [Last update: 24.03.2023] 
-2. CSS Rules[^2] [Last update: 24.03.2023] 
+1. HTML Rules [Last update: 24.03.2023] 
+2. CSS Rules [Last update: 24.03.2023] 
 
 ## Coding style
 
-1. [^1]:**HTML Rules [Last update: 24.03.2023]**
+1. **HTML Rules [Last update: 24.03.2023]**
     1. **HTML Style Rules**
     
     Use HTML5
@@ -261,7 +261,7 @@ All members in team.
     <!-- Recommended -->
     <a class="maia-button maia-button-secondary">Sign in</a>
     ```
-2. [^2]:**CSS Rules [Last update: 24.03.2023]**
+2. **CSS Rules [Last update: 24.03.2023]**
     1. **CSS Validity**
 
     Use valid CSS where possible.
