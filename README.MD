@@ -7,8 +7,11 @@ Any complaints please contact [the author of this template at here](https://www.
 - Students:
     1. Dương Thái Bảo - Student code: 21037621.
     2. Hoàng Thanh Dũng - Student code: 21123041.
+- Team's name: DeadlineRunner (A.k.a DR Team)
 - Summary purpose about project: For education.
 ## The language/technology
 1. HTML
 2. CSS
 3. JavaScript
+## The rules apply for student team
+[Click here to read](RULES.MD)
