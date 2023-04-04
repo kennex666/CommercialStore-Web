@@ -38,3 +38,4 @@
   - `btn-medium-size`: Kế thừa btn, nút to hơn.
   - `btn-small-size`: Nút nhỏ
   - `btn-black`: Nút màu đen 
+  - `btn-small-size-increase`: Dạng nhỏ hơn medium một chút

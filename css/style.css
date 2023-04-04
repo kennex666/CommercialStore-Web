@@ -130,6 +130,12 @@
     padding: 7px 15px 7px 15px;
 }
 
+.btn-small-size-increase{
+    font-size: medium;
+    width: fit-content;
+    padding: 12px 15px 12px 15px;
+}
+
 .btn-black{
     background-color: #000;
     color: #fff;
@@ -168,9 +174,8 @@
 }
 
 .header-bar__nav-item a:hover {
-    color: #d7d3d3;
+    color: #eaeaec;
     text-decoration: none;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     padding-left: 7px;
@@ -184,7 +189,6 @@
     flex-direction: row;
 }
 .header-bar__info-part a{
-    padding-right: 13px;
 }
 
 .search-bar{
