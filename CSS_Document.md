@@ -3,6 +3,7 @@
 ## Thuộc tính mặc định
 
 - `container-allpage` sử dụng để chứa toàn trang web với padding đặt sẵn.
+-  `postion-relative` sử dụng để set `position: relative` nhanh
 
 ## Các thuộc tính màu nền - Background color
 
