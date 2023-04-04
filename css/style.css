@@ -1,0 +1,153 @@
+
+/* Default Style */
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #d7d3d3;
+    letter-spacing: 0.5px;
+}
+
+
+/* Font size */
+.font-size-s{
+    font-size: small;
+}
+
+.font-size-xm {
+    font-size: medium;
+}
+
+.font-size-l {
+    font-size: large;
+}
+
+.font-weight-light {
+    font-weight: 100;
+}
+
+.font-size-15px{
+    font-size: 15px
+}
+
+
+/* Background color */
+.bg-color-gray{
+    background-color: #eaeaec;
+}
+
+
+/* Margin */
+.mg-right-7px {
+    margin-right: 7px;
+}
+
+.mg-left-5px {
+    margin-left: 5px;
+}
+
+/* Padding */
+.padding-default {
+    padding: 0px 185px 5px 185px;
+}
+
+
+/* Font color */
+.font-color-black{
+    color: #000;
+}
+
+.font-color-gray{
+    color: #8e8989;
+}
+
+.font-color-white{
+    color: #d7d3d3;
+}
+
+/* Home page - Header */
+#header{
+    background-color: #201818;
+}
+
+.header-bar{
+    padding-top: 15px;
+}
+
+.header-bar__containter-info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-bar__nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-bar__nav-item a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header-bar__nav-item a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.header-bar__info-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.header-bar__info-part a{
+    padding-right: 13px;
+}
+
+.search-bar{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+
+}
+
+.search-bar input {
+    height: 30px;
+    width: 375px;
+    padding: 0px;
+    border: 0px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.btn-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 45px;
+    background-color: #fe7b38;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0px;
+    border: 0px;
+}
+
+.header-bar__containter-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 7px 5px 7px;
+}
