@@ -33,12 +33,14 @@
                     </div>
                     <!-- center -->
                     <div class="header-bar__info-center">
-                        <div class="search-bar">
-                            <input id="txtSearch" placeholder="Xiaomi Redmi Note 11, iPad Air, Mi Pad 6,..." type="text">
-                            <button class="btn-search">
-                                <img alt="Button search" src="img/ico-search.svg" width="15px" height="15px" style="filter: invert(1);" />
-                            </button>
-                        </div>
+                        <form action="search" method="post">
+                            <div class="search-bar">
+                                <input id="txtSearch" placeholder="Xiaomi Redmi Note 11, iPad Air, Mi Pad 6,..." type="text">
+                                <button class="btn-search">
+                                    <img alt="Button search" src="img/ico-search.svg" width="15px" height="15px" style="filter: invert(1);" />
+                                </button>
+                            </div>
+                        </form>
                     </div>
                     <!-- Right -->
                     <div class="header-bar__info-part"> 
@@ -50,7 +52,7 @@
                         </div>
                         <div class="header-bar__nav-item">
                             <a href="whitelist.html"><img class="mg-right-7px" alt="whitelist" src="img/ico-heart.svg" width="17px" height="17px"
-                                    style="filter: invert(1);" /> Account</a>
+                                    style="filter: invert(1);" /> Whitelist</a>
                         </div>
                         <div class="header-bar__nav-item">
                             <a href="cart.html"><img class="mg-right-7px" alt="whitelist" src="img/ico-cart.svg" width="17px" height="17px"
@@ -67,23 +69,64 @@
                     </div>
                     <div class="header-bar__nav-item">
                         <a class="font-weight-light font-size-15px" href="newyear-deal.html"><img class="mg-right-7px" alt="whitelist"
-                                src="img/ico-hpny.png" width="17px" height="17px" style="filter: invert(1);" /> New Year Deals</a>
+                                src="img/ico-hpny.png" width="17px" height="17px" style="filter: invert(1);"/> New Year Deals</a>
                     </div>
                     <div class="header-bar__nav-item">
                         <a class="font-weight-light font-size-15px" href="hot-deals.html"><img class="mg-right-7px" alt="whitelist"
                                 src="img/ico-fire.png" width="17px" height="17px" /> Hot deals</a>
                     </div>
-                    <div class="header-bar__nav-item">
-                        <a class="font-weight-light font-size-15px" href="allproducts.html">Apple</a><img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px"style="filter: invert(1);" />
+                    <div class="header-bar__nav-item postion-relative">
+                        <a class="font-weight-light font-size-15px" href="allproducts.html">Apple<img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px"style="filter: invert(1);" /></a>
+                        <div class="header-bar__nav-item-flow">
+                            <div class="header-bar__nav-item">
+                                <a class="font-weight-light font-size-15px" href="allproducts.html">iPod</a>
+                            </div>
+                            <div class="header-bar__nav-item">
+                                <a class="font-weight-light font-size-15px" href="allproducts.html">iPad</a>
+                            </div>
+                            <div class="header-bar__nav-item">
+                                <a class="font-weight-light font-size-15px" href="allproducts.html">iPhone</a>
+                            </div>
+                            <div class="header-bar__nav-item">
+                                <a class="font-weight-light font-size-15px" href="allproducts.html">AirPod</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="header-bar__nav-item">
-                        <a class="font-weight-light font-size-15px" href="allproducts.html">Laptops</a><img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px" style="filter: invert(1);" />
+                    <div class="header-bar__nav-item postion-relative">
+                        <a class="font-weight-light font-size-15px" href="allproducts.html">Laptops><img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px" style="filter: invert(1);" /></a>
+                    <div class="header-bar__nav-item-flow">
+                        <div class="header-bar__nav-item">
+                            <a class="font-weight-light font-size-15px" href="allproducts.html">HP</a>
+                        </div>
+                        <div class="header-bar__nav-item">
+                            <a class="font-weight-light font-size-15px" href="allproducts.html">Acer</a>
+                        </div>
+                        <div class="header-bar__nav-item">
+                            <a class="font-weight-light font-size-15px" href="allproducts.html">Macbook</a>
+                        </div>
+                        <div class="header-bar__nav-item">
+                            <a class="font-weight-light font-size-15px" href="allproducts.html">Surface</a>
+                        </div>
                     </div>
-                    <div class="header-bar__nav-item">
-                        <a class="font-weight-light font-size-15px" href="allproducts.html">Desktop Computer</a><img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px" style="filter: invert(1);" />
                     </div>
-                    <div class="header-bar__nav-item">
-                        <a class="font-weight-light font-size-15px" href="allproducts.html">Chromebooks</a><img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px" style="filter: invert(1);" />
+                    <div class="header-bar__nav-item postion-relative">
+                        <a class="font-weight-light font-size-15px" href="allproducts.html">Desktop Computer<img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px" style="filter: invert(1);" /></a>
+                        <div class="header-bar__nav-item-flow">
+                            <div class="header-bar__nav-item">
+                                <a class="font-weight-light font-size-15px" href="allproducts.html">Dell</a>
+                            </div>
+                            <div class="header-bar__nav-item">
+                                <a class="font-weight-light font-size-15px" href="allproducts.html">Acer</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bar__nav-item postion-relative">
+                        <a class="font-weight-light font-size-15px" href="allproducts.html">Chromebooks<img class="mg-left-5px" alt="arrow" src="img/arrow-down.svg" width="10px" height="10px" style="filter: invert(1);" /></a>
+                        <div class="header-bar__nav-item-flow">
+                            <div class="header-bar__nav-item">
+                                <a class="font-weight-light font-size-15px" href="allproducts.html">2023</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="header-bar__nav-item">
                         <a class="font-weight-light font-size-15px" href="allproducts.html">Tablets</a>
