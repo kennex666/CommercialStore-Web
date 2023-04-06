@@ -359,12 +359,12 @@
 }
 
 .btn-slide-right{
-    top: 168px;
+    top: 148px;
     right: 15px;
 }
 
 .btn-slide-left{
     rotate: 180deg;
-    top: 147px;
+    top: 128px;
     left: 15px;
 }
