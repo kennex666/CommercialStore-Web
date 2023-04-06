@@ -2,6 +2,8 @@
 /* Default Style */
 *{
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     letter-spacing: 0.5px;
@@ -229,8 +231,8 @@ a.no-a-decor:hover {
     align-items: center;
     flex-direction: row;
 }
-.header-bar__info-part a{
-}
+/* .header-bar__info-part a{
+} */
 
 .search-bar{
     display:flex;
@@ -606,4 +608,71 @@ a.no-a-decor:hover {
     border-radius: 4px;
     width: 200px;
     z-index: 1;
+}
+
+/* footer */
+#footer {
+    height: 438px;
+    background-color: #201818;
+    color: #fff;
+}
+
+/* footr list */
+.footer-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    margin: auto;
+}
+
+.footer-list__nav {
+    list-style-type: none;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.footer-list__subnav:first-child {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-list__subnav {
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+/* footer brand */
+.footer-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    margin-left: 62px;
+}
+
+.footer-brand__apple {
+    width: 84px;
+}
+
+.footer-brand__chat {
+    width: 166px;
+    height: 62px;
+    background-color: #FF6F42;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-nav-item {
+    margin-left: 20px;
+    margin-right: 16px;
+}
+
+/* footer introduce */
+.footer-introduce {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
 }
