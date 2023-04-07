@@ -12,7 +12,6 @@
 
 - [ ] Xây dựng phần About - nằm ở header
 - [ ] Xây dựng phần Category - ở header
-- [ ] Xây dựng phần slide
 - [X] Xây dựng phần footer
 - [ ] Xây dựng phần khách hàng thân thiết đánh giá
 - [ ] Xây dựng phần FAQ

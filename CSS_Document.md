@@ -15,8 +15,9 @@
 </div>
 ```
 - `no-a-decor` thẻ a không có gạch chân
-- `hover` khi rê chuột vào sẽ có hiệu ứng mờ đi
-- `center-flex-row`: Canh giữa flex dạng row
+- `hover` khi rê chuột vào sẽ có hiệu ứng mờ đi, sáng rực lên
+- `hover-op06` khi rê chuột vào sẽ có hiệu ứng mờ đi nhưng không làm sáng
+- ` `: Canh giữa flex dạng row
 
 ## Các thuộc tính màu nền - Background color
 
@@ -61,3 +62,5 @@
   - `btn-padding-left-right-15px`: Nút nhỏ trong thẻ mua hàng
   - `btn-padding-left-right-box`: Nút nhỏ trong thẻ mua hàng có dạng box
   - `btn-decor-ograngebg`: Nút có nền cam chữ trắng
+  - `btn-decor-graybg`: Nút có nền màu xám, chữ đen
+  - `btn-padding-left-right-15px-maxsize`: full size

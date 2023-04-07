@@ -25,6 +25,10 @@ body{
     opacity: 0.8;
 }
 
+.hover-op06:hover {
+    opacity: 0.6;
+}
+
 /* Position */
 .postion-relative {
     position: relative;
@@ -181,6 +185,12 @@ a.no-a-decor:hover {
     border: 2px #d7d3d3 solid;
 }
 
+.btn-decor-graybg {
+    border: 0px;
+    background-color: #e5e5e5;
+    color: #000;
+}
+
 .btn-decor-ograngeborder {
     background-color: #fff;
     border: 2px #fe7b38 solid;
@@ -194,6 +204,11 @@ a.no-a-decor:hover {
 
 .btn-padding-left-right-15px{
     padding: 7px 20px 7px 20px;
+}
+
+.btn-padding-left-right-15px-maxsize {
+    padding: 7px 0px 7px 0px;
+    width: 100%
 }
 
 .btn-padding-left-right-box {
@@ -243,7 +258,7 @@ a.no-a-decor:hover {
     align-items: center;
 }
 
-.header-bar__nav-item:hover a {
+.header-bar__nav-item a:hover  {
     filter: sepia(100%) saturate(10000%) hue-rotate(1deg) brightness(102%) contrast(105%);
 }
 
@@ -479,6 +494,7 @@ a.no-a-decor:hover {
 
 .title-head-bar h2 {
     color: #8e8989;
+    font-weight: 540;
     padding-left: 10px;
 }
 
@@ -700,6 +716,37 @@ a.no-a-decor:hover {
 .card-ads-product-nocenter .text-center-in-image {
     position: absolute;
     bottom: 0px;
+}
+
+.blog-bar{
+    display: grid;
+    grid-template-areas: "A B C";
+}
+
+.blog-single{
+    position: relative;
+    padding: 20px 24px 20px 23px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+.blog-single a{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #5f5c5c;
+    font-weight: bold;
+}
+
+.blog-author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 70px;
 }
 
 /* footer */
