@@ -5,8 +5,18 @@
 - `container-allpage` sử dụng để chứa toàn trang web với padding đặt sẵn. (DEPRECATED)
 - `postion-relative` sử dụng để set `position: relative` nhanh
 - `postion-absolute` sử dụng để set `position: absolute` nhanh
+- `text-center-in-image` chữ được canh giữa hình.
+```
+ <div class="text-center-in-image">
+    <img src="img/chat-phone.svg" alt="Phone" width="210px">
+    <div> <!--- Cái này sẽ nằm giữa chữ-->
+        <button class="btn btn-black mg-top-45px hover">Need help?</button>
+    </div>
+</div>
+```
 - `no-a-decor` thẻ a không có gạch chân
 - `hover` khi rê chuột vào sẽ có hiệu ứng mờ đi
+- `center-flex-row`: Canh giữa flex dạng row
 
 ## Các thuộc tính màu nền - Background color
 
@@ -21,6 +31,10 @@
 - Chữ lớn: `font-size-l`
 - Chữ thanh: `font-weight-light`
 - Chữ đậm: `bold`
+- Chữ màu cam: `font-color-orange`
+- Chữ màu xám: `font-color-gray` 
+- Chữ màu đen: `font-color-black`
+- Chữ màu trắng: `font-color-white`
 
 ## Margin cách các icon 
 

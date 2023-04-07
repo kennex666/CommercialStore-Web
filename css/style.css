@@ -7,6 +7,13 @@
     letter-spacing: 0.5px;
 }
 
+.center-flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     align-items: center;
     margin: auto;
@@ -24,6 +31,19 @@ body{
 }
 
 .postion-absolute {
+    position: absolute;
+}
+
+.text-center-in-image{
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.text-center-in-image img{
+}
+.text-center-in-image div {
     position: absolute;
 }
 
@@ -100,7 +120,11 @@ body{
 }
 
 .font-color-white{
-    color: #d7d3d3;
+    color: #fff;
+}
+
+.font-color-orange{
+    color: #fe7b38;
 }
 
 a.no-a-decor{
@@ -458,10 +482,15 @@ a.no-a-decor:hover {
     padding-left: 10px;
 }
 
+.best-sellers-bar{
+    padding-bottom: 15px;
+}
+
 .best-sellers-bar-product{
     display: grid;
     grid-template-areas: "A B C D";
     column-gap: 25px;
+    padding-bottom: 25px;
 }
 
 .product{
@@ -486,6 +515,11 @@ a.no-a-decor:hover {
     font-weight: bold;
     border-radius: 3px;
     padding: 5px 10px 5px 10px;
+}
+
+.tag-null{
+    padding: 5px 10px 5px 10px;
+    height: 9px;
 }
 
 .tag-saleoff{
@@ -608,6 +642,65 @@ a.no-a-decor:hover {
     z-index: 1;
 }
 
+.best-sellers-bar {
+    padding-bottom: 40px;
+}
+
+.card-ads-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-ads-product .text-center-in-image {
+    position: absolute;
+    bottom: 0;
+    margin-left: 5px;
+}
+
+.card-ads-product h1 {
+    padding-top: 50px;
+    font-size: larger;
+    padding-bottom: 5px;
+}
+.card-ads-product h2 {
+    font-size: larger;
+    padding-bottom: 35px;
+}
+
+
+.card-ads-product-nocenter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.card-ads-product-nocenter h1 {
+    padding-top: 45px;
+    font-size: xx-large;
+    color: #08a5fd;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.card-ads-product-nocenter h2 {
+    font-size: larger;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.card-ads-product-nocenter h3 {
+    font-size: large;
+    font-weight: lighter;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.card-ads-product-nocenter .text-center-in-image {
+    position: absolute;
+    bottom: 0px;
+}
 
 /* footer */
 #footer {

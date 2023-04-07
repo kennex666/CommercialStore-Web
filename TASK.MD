@@ -3,9 +3,9 @@
 - [X] Xây dựng phần header
 - [X] Xây dựng phần thanh review dạng quảng cáo
 - [X] Xây dựng phần slide
-- [ ] Xây dựng phần brand
-- [ ] Xây dựng thanh sản phẩm
-- [ ] Xây dựng thanh recommended
+- [X] Xây dựng phần brand
+- [X] Xây dựng thanh sản phẩm
+- [X] Xây dựng thanh recommended
 - [ ] Xây dựng phần blog
 
 ## Dũng 
