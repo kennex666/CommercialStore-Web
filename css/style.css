@@ -1,8 +1,8 @@
-
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 /* Default Style */
 *{
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;                                                                    
+    font-family: 'SF Pro Display', sans-serif;
     font-size: medium;
     letter-spacing: 0.5px;
 }
@@ -761,7 +761,7 @@ a.no-a-decor:hover {
 /* footr list */
 .footer-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     margin: auto;
     padding-bottom: 50px;
@@ -769,18 +769,18 @@ a.no-a-decor:hover {
 
 .footer-list__nav {
     list-style-type: none;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .footer-list__subnav:first-child {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-.footer-list__subnav {
-    font-size: 11px;
-    margin-bottom: 12px;
+.footer-list__subnav, .footer-list__subnav a{
+    font-size: 13px;
+    margin-bottom: 7px;
 }
 
 /* footer brand */
@@ -800,4 +800,22 @@ a.no-a-decor:hover {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.footer-list__subnav:first-child:hover {
+    color: #fff;
+}
+
+.footer-list__subnav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-list__subnav a:hover {
+    color: #ff0;
+}
+
+.footer-single-brand img{
+    width: 150px;
+    margin-right: 10px;
 }

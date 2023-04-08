@@ -6,7 +6,7 @@
 - [X] Xây dựng phần brand
 - [X] Xây dựng thanh sản phẩm
 - [X] Xây dựng thanh recommended
-- [ ] Xây dựng phần blog
+- [X] Xây dựng phần blog
 
 ## Dũng 
 
