@@ -170,7 +170,7 @@ a.no-a-decor:hover {
     align-items: center;
     padding: 5px 10px 5px 10px;
     color: #000;
-    border-radius: 4px;
+    border-radius: 5px;
     width: fit-content;
     background-color: #eaeaec;
 }
@@ -919,8 +919,8 @@ a.no-a-decor:hover {
 }
 
 .product-info__information {
-    margin-left: 50px;
-    padding: 10px 25px 20px 25px;
+    margin-left: 40px;
+    padding: 10px 35px 20px 35px;
     background-color: #fff;
     border-radius: 6px;
     display: flex;
@@ -1054,7 +1054,7 @@ a.no-a-decor:hover {
 .product-info-desciption__left{
     background-color: #fff;
     padding: 25px 25px 25px 25px;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-bottom: 30px;
     height: fit-content;
 }
@@ -1089,7 +1089,7 @@ a.no-a-decor:hover {
     grid-area: "B";
     background-color: #fff;
     padding: 25px 25px 25px 25px;
-    border-radius: 5px;
+    border-radius: 6px;
     height: fit-content;
 }
 
@@ -1180,7 +1180,7 @@ ul.leaders li{
 
 .card-white-100percent{
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 25px 25px 25px 25px;
 }
 
@@ -1232,7 +1232,7 @@ ul.leaders li{
 .product-info-desciption__left-ads {
     background-color: #fff;
     padding: 0px 25px 0px 25px;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-bottom: 30px;
     height: fit-content;
 }
