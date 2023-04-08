@@ -51,6 +51,9 @@
     padding: 0px 185px 5px 185px;
 }`
 
+- `card-white-100percent`: Thẻ màu trắng chiếm toàn khung 
+- `grid1x2-fullwidth` : Grid 1x2 full
+
 ## Button
 - `btn`: Nút màu trắng xám, chữ màu đen, định dạng flex
   - `btn-medium-size`: Kế thừa btn, nút to hơn.
@@ -64,3 +67,9 @@
   - `btn-decor-ograngebg`: Nút có nền cam chữ trắng
   - `btn-decor-graybg`: Nút có nền màu xám, chữ đen
   - `btn-padding-left-right-15px-maxsize`: full size
+  - `btn-padding-left-right-14px`: top, bot hẹp hơn 15px, viền mỏng hơn
+  - `btn-xsmall-size`: xsmall nhỏ hơn nút small
+  - `btn-padding-left-right-16px-maxsize`:  full size, top bot rộng hơn
+  - `btn-decor-border-ms`: Border 1.5px
+  - `btn-padding-maxsize`: Full size
+  - `btn-colunm-center`: Dạng cột, căn giữa
