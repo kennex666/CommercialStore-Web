@@ -672,6 +672,7 @@ a.no-a-decor:hover {
   }
   .body-ul-item{
     list-style-type: none;
+    padding-left: 32px;
   }
   .body-li-item:first-child{
     font-weight: bold;
@@ -690,22 +691,17 @@ a.no-a-decor:hover {
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     width: 1040px;
-    background-color: #fff;
+    grid-gap: 34px;
   }
   .body-categores__title{
     display: flex;
   }
 .body-categories__waper--left{
-
+    background-color: #fff;
+    border-radius: 8px;
+    height: 447px;
 }
-.body-categories__waper--center{
-    background-color: rgba(208, 73, 134, 0.6);
 
-}
-.body-categories__waper--right{
-    background-color: rgba(208, 73, 183, 0.6);
-
-}
 .categories-btn-learn-more{
     width: 150px;
     height: 40px;
@@ -715,138 +711,40 @@ a.no-a-decor:hover {
 }
 .body-categories__waper--left ul{
     margin-top: 42px;
-    margin-bottom: 28px;
-    margin-left: 32px;
+    margin-bottom: 64px;
+
 }
 .body-categories__waper--left img{
-    height: 144px;
-    margin-left: 40px;
+    height: 174px;
+    margin-left: 12px;
 }
 .body-categories__waper--left  button{
     margin-bottom: 58px;
     margin-left: 32px;
 
 }
-/* body css-h1 &h2 */
-.body-h1{
-    font-size: 28px;
-  }
-.body-h2{
-    margin-left: 14px; 
-    font-size: 16px;
-    color: #A5A5A6; 
-  }
-/* body- about-us */
-.about-us{
-    margin-top: 56px;
+.body-categories__waper--nav{
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    align-items: end;
+    height: 218px;
+    margin-bottom: 10px;
+
+}
+.body-categories__waper--nav img{
+    height: 168px;
     
 }
-.body-title{
-    display: flex;
-    align-items:baseline;
-    margin-bottom: 28px;
-}
-.about-us__waper {
-    display: grid;
-    grid-template-columns:  2fr 1.5fr 1.5fr;
-    width: 1040px;
-  }
-  .about-us__waper{
-    background-color: #fff;
-    margin-bottom: 40px;
-    border-radius: 10px;
-  }
-
-  .about-us__waper--item-left__btn{
-    width: 186px;
-    height: 46px;
-    background-color: #fe7b38;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-  }
-  .about-us__waper--item-left img{
-    height: 76px; 
-    margin-top: 60px;
-    margin-left: 42px;
-  }
-  .about-us__waper--item-left h2{
-    font-size: 14px;
-    color: #524F4F;
-    margin-top: 32px;
-    margin-bottom: 28px;
-    margin-left: 52px;
-  }
-  .about-us__waper--item-left__btn{
-    margin-bottom: 62px;
-    margin-left: 52px;
-
-  }
-  .about-us__waper--item-center__main{
-    display: flex;
-    margin-top: 62px;
-  }
-  .about-us__waper--item-center__main img{
-    height: 60px;
-    margin-right: 16px;
-  }
-  .body-ul-item{
-    list-style-type: none;
-  }
-  .body-li-item:first-child{
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 14px;
-  }
-  .body-li-item{
-    color: #868181;
-  }
-  
-  /* body - categories */
-  .body-categories{
-    
-  }
-  .body-categories__waper{
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    width: 1040px;
-    background-color: #fff;
-  }
-  .body-categores__title{
-    display: flex;
-  }
-.body-categories__waper--left{
-
-}
-.body-categories__waper--center{
-    background-color: rgba(208, 73, 134, 0.6);
-
-}
-.body-categories__waper--right{
-    background-color: rgba(208, 73, 183, 0.6);
-
-}
-.categories-btn-learn-more{
-    width: 150px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px #D9D9D9 solid;
-    background-color: #fff;
-}
-.body-categories__waper--left ul{
-    margin-top: 42px;
-    margin-bottom: 28px;
+.body-categories__waper--nav button{
     margin-left: 32px;
+    margin-bottom: 36px;
 }
-.body-categories__waper--left img{
-    height: 144px;
-    margin-left: 40px;
+.body-categories__waper--nav ul{
+    margin-top: 30px;
+    margin-bottom : 26px;
 }
-.body-categories__waper--left  button{
-    margin-bottom: 58px;
-    margin-left: 32px;
 
-}
 /* footer */
 #footer {
     display: flex;
