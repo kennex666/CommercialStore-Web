@@ -18,6 +18,7 @@
 - `hover` khi rê chuột vào sẽ có hiệu ứng mờ đi, sáng rực lên
 - `hover-op06` khi rê chuột vào sẽ có hiệu ứng mờ đi nhưng không làm sáng
 - ` `: Canh giữa flex dạng row
+- `gray-star`: Làm cho sao vàng thành xám
 
 ## Các thuộc tính màu nền - Background color
 
