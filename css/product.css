@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rebox{
+    overflow-y: scroll;
+    height: 200px;
+    margin-top: 50px;
+ 
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(249, 181, 166);
+    border-radius: 5px;
+    
+  }
+  
+.rebox::-webkit-scrollbar-thumb {
+    background-color: #FF6636;
+    border-radius: 5px;
+    height: 20px;
+  }
+
+.rebox h1 {
+    font-size: x-large;
+    padding-bottom: 12px;
+}
+.rebox h2 {
+    font-size: revert;
+    padding-top: 28px;
+    padding-bottom: 12px;
+}
