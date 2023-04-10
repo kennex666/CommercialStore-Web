@@ -10,7 +10,7 @@
 - [X] Xây dựng phần blog
 
 **PRODUCT PAGE**
-- [ ] Xây dựng trang Product
+- [X] Xây dựng trang Product
 
 ## Dũng
 **HOME PAGE**
