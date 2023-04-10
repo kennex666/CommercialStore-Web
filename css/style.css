@@ -1961,7 +1961,7 @@ ul.body-ul-item{
 
 .rebox::-webkit-scrollbar {
     width: 6px;
-    background-color: rgb(249, 181, 166);
+    background-color: #ff653625;
     border-radius: 5px;
     
   }
