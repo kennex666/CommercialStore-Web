@@ -14,8 +14,8 @@
 
 ## Dũng
 **HOME PAGE**
-- [ ] Xây dựng phần About - nằm ở header
-- [ ] Xây dựng phần Category - ở header
-- [X] Xây dựng phần footer
-- [ ] Xây dựng phần khách hàng thân thiết đánh giá
-- [ ] Xây dựng phần FAQ
+- [x] Xây dựng phần About - nằm ở header
+- [x] Xây dựng phần Category - ở header
+- [x] Xây dựng phần footer
+- [x] Xây dựng phần khách hàng thân thiết đánh giá
+- [x] Xây dựng phần FAQ

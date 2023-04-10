@@ -9,7 +9,7 @@
     margin-top: 50px;
  
 }
-::-webkit-scrollbar {
+.rebox::-webkit-scrollbar {
     width: 6px;
     background-color: rgb(249, 181, 166);
     border-radius: 5px;
