@@ -2137,7 +2137,7 @@ ul.body-ul-item{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "A B";
-    column-gap: 60px;
+    column-gap: 150px;
     row-gap: 20px;
 }
 
@@ -2190,14 +2190,15 @@ ul.body-ul-item{
 }
 
 .hc-input {
-    width: 70%;
+    width: 80%;
+    margin-bottom: 7px;
 }
-.hc-input input{ 
+.hc-input > input{ 
     padding: 10px 10px 10px 30px;
     width: 100%;
     border: 2px solid #e0e0e0;
-    border-radius: 5px;
-    margin-right: 25px;
+    border-radius: 5px; 
+    margin-right: 10px;
 }
 
 .hc-input textarea {
@@ -2211,4 +2212,14 @@ ul.body-ul-item{
 
 .hc-gap-col{
     column-gap: 40px;
+    row-gap: 40px;
+}
+
+.hc-input-row {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0px 5px 0px;
+}
+.hc-input-row input {
+    margin-right: 7px;
 }
