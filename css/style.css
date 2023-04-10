@@ -2181,32 +2181,60 @@ ul.body-ul-item{
     align-items: flex-start;
 }
 
+.hc-line-fullwidth-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 5px; 
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .hc-line-fullwidth{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 5px; 
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hc-line-fullwidth input, .hc-line-fullwidth-top textarea{
     width: 100%;
 }
 
-.hc-line-fullwidth *{
-    width: 100%;
+.hc-line-fullwidth img{
+    border: 0px;
+    padding: 2px 10px 2px 0px;
+    border-right: 2px solid #e0e0e0;
+}
+
+.hc-line-fullwidth-top img {
+    border: 0px;
+    margin-top: 4px;
+    padding: 2px 10px 2px 0px;
+    border-right: 2px solid #e0e0e0;
 }
 
 .hc-input {
     width: 80%;
     margin-bottom: 7px;
 }
-.hc-input > input{ 
-    padding: 10px 10px 10px 30px;
+.hc-input > input, .hc-input>textarea{ 
+    border: 0px;
+    padding: 5px 5px 5px 5px;
     width: 100%;
-    border: 2px solid #e0e0e0;
-    border-radius: 5px; 
-    margin-right: 10px;
-}
-
-.hc-input textarea {
-    padding: 10px 10px 10px 30px;
-    width: 100%;
-    border: 2px solid #e0e0e0;
-    border-radius: 5px;
-    margin-right: 25px;
+    outline: none;
     resize: none;
 }
 
