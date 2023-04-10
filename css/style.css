@@ -778,7 +778,9 @@ a.no-a-decor:hover {
 
 .blog-bar{
     display: grid;
-    grid-template-areas: "A B C";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    column-gap: 27px;
 }
 
 .blog-single{
@@ -787,9 +789,13 @@ a.no-a-decor:hover {
     background-color: #fff;
     border-radius: 8px;
     z-index: 0;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    width: 270px;
+    width: fit-content;
+}
+
+.blog-single img{
+    width: 273px;
 }
 
 .blog-single a{
@@ -1914,8 +1920,11 @@ ul.body-ul-item{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: auto;
-    padding-bottom: 50px;
+}
+
+ ul.all_product--list__nav {
+    padding: 0px;
+    padding-left: 1px;
 }
 
 .all_product--list__nav {
@@ -1934,7 +1943,6 @@ ul.body-ul-item{
 
 .all_product--list__subnav,
 .footer-list__subnav a {
-    padding-left: 1px;
     font-size: 13px;
     margin-bottom: 7px;
 }
@@ -1946,10 +1954,11 @@ ul.body-ul-item{
 
 .rebox{
     overflow-y: scroll;
-    height: 250px;
+    height: 230px;
     margin-top: 50px;
- 
+    margin-bottom: 100px;
 }
+
 .rebox::-webkit-scrollbar {
     width: 6px;
     background-color: rgb(249, 181, 166);
