@@ -894,6 +894,7 @@ a.no-a-decor:hover {
 }
 
 .product-info__image-product{
+    width: 100%;
 }
 
 .product-info__image-product__img{
@@ -914,16 +915,16 @@ a.no-a-decor:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 30px;
-    column-gap: 27px;
+    column-gap: 25px;
     width: fit-content;
 
 }
 
 .product-info__image-product__bar img {
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 10px;
-    padding: 7px 8px 7px 8px;
+    padding: 7px 7px 7px 7px;
 }
 
 .product-info__information {
@@ -2106,4 +2107,108 @@ ul.body-ul-item{
 .reload-product img {
     width: 70px;
     margin-bottom: 15px;
+}
+
+.helpcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0px 50px 0px;
+}
+
+.helpcenter-intro{
+    padding-right: 250px;
+}
+
+.helpcenter-intro h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.helpcenter-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #5f5c5c;
+}
+
+.helpcenter-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "A B";
+    column-gap: 60px;
+    row-gap: 20px;
+}
+
+.hc-grid-left h2, .hc-grid-right h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.hc-grid-left p, .hc-grid-right p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #5f5c5c;
+}
+
+.hc-grid-left img, .hc-grid-right img {
+    margin-right: 10px;
+}
+
+.hc-info{
+    margin-bottom: 10px;
+}
+
+.hc-info-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.hc-info-bar a{
+    margin-right: 7px;
+}
+
+.hc-grid-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hc-line-fullwidth{
+    width: 100%;
+}
+
+.hc-line-fullwidth *{
+    width: 100%;
+}
+
+.hc-input {
+    width: 70%;
+}
+.hc-input input{ 
+    padding: 10px 10px 10px 30px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.hc-input textarea {
+    padding: 10px 10px 10px 30px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    margin-right: 25px;
+    resize: none;
+}
+
+.hc-gap-col{
+    column-gap: 40px;
 }
