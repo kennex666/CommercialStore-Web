@@ -2251,3 +2251,36 @@ ul.body-ul-item{
 .hc-input-row input {
     margin-right: 7px;
 }
+
+.ap-chkbox input[type=checkbox] {
+    display: none;
+}
+
+.ap-chkbox label {
+    position: relative;
+    padding-left: 20px;
+}
+
+.ap-chkbox span:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #E9E9E9;
+}
+
+.ap-chkbox input[type=checkbox]:checked+label span:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #f3f3f3;
+    background-color: #FD6B02;
+    text-align: center;
+    line-height: 17px;
+}
