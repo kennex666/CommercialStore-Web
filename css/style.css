@@ -495,12 +495,14 @@ a.no-a-decor:hover {
 }
 
 .btn-slide-right {
+    display: none;
     top: 128px;
     right: 15px;
     filter: invert(85%) opacity(60%);
 }
 
 .btn-slide-left{
+    display: none;
     top: 128px;
     left: 15px;
     filter: invert(85%) opacity(60%);
@@ -567,10 +569,22 @@ a.no-a-decor:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "A B C D";
     column-gap: 25px;
+    row-gap: 25px;
     padding-bottom: 25px;
 }
 
 .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    z-index: 0;
+}
+
+.loadBar-productCard {
     position: relative;
     padding: 20px 20px 20px 20px;
     background-color: #fff;
