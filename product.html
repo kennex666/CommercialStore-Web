@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product name | Commercial Store - By DR Team</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
     <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
 </head>
 
 <body>
@@ -60,7 +62,10 @@
                     </div>
                     <div class="header-bar__nav-item">
                         <a href="cart.html"><img class="mg-right-7px" alt="whitelist" src="img/ico-cart.svg"
-                                width="17px" height="17px" style="filter: invert(1);" /> Cart</a>
+                                width="17px" height="17px" style="filter: invert(1);" /> 
+                                <div class="cart-number-badge" id="cart">
+                                    <p id="p-cart " style="font-size: 12px;">0</p>
+                                </div>Cart</a>
                     </div>
                 </div>
 
@@ -245,7 +250,7 @@
                     </div>
                     
                     <div class="product-info__information__review-bar__btn-cart">
-                        <button class="btn btn-decor-ograngebg btn-padding-left-right-15px-maxsize hover-op06">
+                        <button class="btn btn-decor-ograngebg btn-padding-left-right-15px-maxsize hover-op06" onclick="showDiv()">
                             <img src="img/ico-cart.svg" alt="cart" width="15px" style="filter: invert();">Add to cart
                         </button>
                         <button class="btn btn-decor-grayborder btn-padding-left-right-15px-maxsize hover-op06">Buy now</button>
