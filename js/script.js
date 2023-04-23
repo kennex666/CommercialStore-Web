@@ -17,14 +17,16 @@ function fetchAPIProduct(urlAPI, limitNumberProducts, idLoadProduct, isLoadMore)
             element.description = element.description.substring(0, 65) + '...';
             let product = $.createElement('div');
             product.className = 'product';
-            product.innerHTML = '<div class="product-bar__tag"> <div class="tag-saleoff">10% OFF</div> <div class="tag-bestseller">Bestseller</div> </div> <div class="product-bar__img"> <img src="img/img_product.png" alt="Product"> </div> <div class="product-bar__review"> <div class="product-bar__review__star"> <img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"> </div> <div class="product-bar__review__total"> <span>' + element.rating.count + ' </span><span>reviews</span> </div> </div> <a class="no-a-decor font-color-black" href="product.html?id=' + element.id +'"> <div class="product-bar__title">' + element.title + '</div> </a> <div class="product-bar__description">' + element.description + '</div> <div class="product-bar__sales-info"> <span class="font-size-s">Ends in: </span><span class="font-size-s">19:12:03</span> </div> <div class="product-bar__price"> <span>AED ' + element.price + '</span><span class="product-bar__price__discount">AED $203.00</span> </div> <div class="product-bar__btn"> <button type="button" class="btn font-size-s bold btn-decor-grayborder btn-padding-left-right-15px">Learn more</button> <a href="product.html?id=' + element.id +'" class="no-a-decor"><button type="button" class="btn font-size-s bold btn-decor-ograngeborder btn-padding-left-right-box">Buy</button></a> </div>';
+            product.innerHTML = '<div class="product-bar__tag"> <div class="tag-saleoff">10% OFF</div> <div class="tag-bestseller">Bestseller</div> </div> <div class="product-bar__img"> <img src="img/img_product.png" alt="Product"> </div> <div class="product-bar__review"> <div class="product-bar__review__star"> <img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"><img src="img/star-yellow.svg" alt="Star"> </div> <div class="product-bar__review__total"> <span>' + element.rating.count + ' </span><span>reviews</span> </div> </div> <a class="no-a-decor font-color-black" href="product.html?id=' + element.id +'"> <div class="product-bar__title">' + element.title + '</div> </a> <div class="product-bar__description">' + element.description + '</div> <div class="product-bar__sales-info"> <span class="font-size-s">Ends in: </span><span class="font-size-s">19:12:03</span> </div> <div class="product-bar__price"> <span>AED ' + element.price + '</span><span class="product-bar__price__discount">AED $203.00</span> </div> <div class="product-bar__btn"> <button name="learn-more" type="button" class="btn font-size-s bold btn-decor-grayborder btn-padding-left-right-15px">Learn more</button> <a href="product.html?id=' + element.id +'" class="no-a-decor"><button type="button" class="btn font-size-s bold btn-decor-ograngeborder btn-padding-left-right-box">Buy</button></a> </div>';
             $.getElementById(idLoadProduct).appendChild(product);
         });
     }).then(() => {
         if (isLoadMore) {
             loadMoreCard(idLoadProduct);
         }
-        catchEventLearnMore = $.getElementsByName('learn-more');
+    }).then(() => {
+        
+        catchEventLearnMore = $.getElementById(idLoadProduct).querySelectorAll('[name="learn-more"]');
         for (let i = 0; i < catchEventLearnMore.length; i++) {
             catchEventLearnMore[i].onclick = (e) => {
                 e = e.target;
@@ -32,7 +34,8 @@ function fetchAPIProduct(urlAPI, limitNumberProducts, idLoadProduct, isLoadMore)
                 e.innerHTML = e.innerHTML +
                     '<div class="product-bar-details-popup postion-absolute"> <a class="no-a-decor font-color-black" href="product.html"> <div class="product-bar__title">Apple MacBook Pro</div> </a> <div class="product-bar__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, molestiae?</div> <div class="product-bar-details-popup__info"> <img src="/"> <span class="bold font-color-gray font-size-s">Information 1:</span><span class="font-size-s">Details</span> </div> <div class="product-bar-details-popup__info"> <img src="/"> <span class="bold font-color-gray font-size-s">Information 2:</span><span class="font-size-s">Details</span> </div> <div class="product-bar-details-popup__info"> <img src="/"> <span class="bold font-color-gray font-size-s">Information 3:</span><span class="font-size-s">Details</span> </div> <div class="product-bar-details-popup__info"> <img src="/"> <span class="bold font-color-gray font-size-s">Information 4:</span><span class="font-size-s">Details</span> </div> <div class="product-bar-details-popup__info"> <img src="/"> <span class="bold font-color-gray font-size-s">Information 5:</span><span class="font-size-s">Details</span> </div> <div class="product-bar__sales-info"> <span class="font-size-s">Ends in: </span><span class="font-size-s">19:12:03</span> </div> <div class="product-bar__price"> <span>AED $19.00</span><span class="product-bar__price__discount">AED $203.00</span> </div> <div class="product-bar__btn"> <button type="button" class="btn font-size-s bold btn-decor-ograngebg btn-padding-left-right-15px learn-more-clicked">Learn more</button> <button type="button" class="btn font-size-s bold btn-decor-ograngebg btn-padding-left-right-box"><img src="img/ico_buy.svg" alt="Buy"></button> </div> </div>';
             }
-        }})
+        }
+    })
     .catch ((err) => {
     });
 }
@@ -94,9 +97,8 @@ window.onload = () => {
     } else if (window.location.pathname === '/product.html') {
         let query = window.location.search;
         let id = query.split('=')[1];
-        loadDataProduct('https://fakestoreapi.com/products/' + id); {
-            fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
-        }
+        loadDataProduct('https://fakestoreapi.com/products/' + id);
+        fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
     }
 }
 
