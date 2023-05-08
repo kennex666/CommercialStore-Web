@@ -2315,3 +2315,21 @@ ul.body-ul-item{
 .header-bar__nav-item{
     position: relative;
 }
+@keyframes fadein {
+    from {
+        height: 60%;
+        bottom: 0;
+        left: 0;
+    }
+    to {
+        bottom: 0;
+        left: 0;
+        height: 69%;
+    }
+}
+
+.product-bar-details-popup {
+    animation-name: fadein;
+    animation-duration: 0.5s;
+    animation-fill-mode: none;
+}
