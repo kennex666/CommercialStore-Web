@@ -1,6 +1,18 @@
 const $ = document;
 var e1;
 var catchEventLearnMore;
+var numberInCart = 0;
+
+var cartStorage = window.localStorage.getItem('cart');
+if (!cartStorage)
+    cartStorage = [];
+else {
+    cartStorage = JSON.parse(cartStorage);
+    cartStorage.forEach(element => {
+        if (element > 0)
+            numberInCart++;
+    });
+}
 
 // Bắt sự kiện nút lear more
 function fetchAPIProduct(urlAPI, limitNumberProducts, idLoadProduct, isLoadMore) {
@@ -80,7 +92,9 @@ function loadDataProduct(urlAPI) {
             elem[i].innerHTML = data.title;
         }
         $.getElementById('countReview').innerHTML = data.rating.count;
-        $.getElementById('priceProduct').innerHTML = "ADE $" +  data.price;
+        $.getElementById('priceProduct').innerHTML = "ADE $" + data.price;
+        
+        
     }).catch((err) => {
         console.log(err);
     });
@@ -95,21 +109,56 @@ window.onload = () => {
         fetchAPIProduct('https://fakestoreapi.com/products', 8, "recommendLoad", false);
         fetchAPIProduct('https://fakestoreapi.com/products/category/jewelery', 4, "loadBestSeller", false);
     } else if (window.location.pathname === '/product.html') {
-        let query = window.location.search;
-        let id = query.split('=')[1];
+        let id = getIdProduct()
         loadDataProduct('https://fakestoreapi.com/products/' + id);
         fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
     }
+
+    if (numberInCart > 0) {
+        let div = document.getElementById("cart");
+        let p = document.getElementById('p-cart ');
+        p.textContent = numberInCart;
+        div.style.display = "flex";
+    }
+}
+
+function getIdProduct() {
+    let query = window.location.search;
+    let id = query.split('=')[1];
+    return id;
 }
 
 // cart feature
-function showDiv() {
-    // Chọn thẻ div bằng phương thức getElementById
-    var div = document.getElementById("cart");
-    var p = document.getElementById('p-cart ');
-    let value = parseInt(p.textContent);
-    value++;
-    p.textContent = value;
-    // Đặt giá trị hiển thị của thẻ div là "block" để hiển thị nó
-    div.style.display = "flex";
-  }
+function addToCart() {
+    
+    if (!checkIssetInCart()) { 
+        let div = document.getElementById("cart");
+        let p = document.getElementById('p-cart ');
+        let value = parseInt(p.textContent);
+        value++;
+        p.textContent = value;
+        div.style.display = "flex";
+        ++numberInCart;
+    }
+    addToCart();
+
+}
+
+function addToCart() {
+    if (!checkIssetInCart()) {
+        cartStorage[getIdProduct()] = 1;
+    } else {
+        ++cartStorage[getIdProduct()];
+    }
+    window.localStorage.setItem('cart', JSON.stringify(cartStorage));
+    alert("Add to cart successfully");
+}
+
+function checkIssetInCart() {
+    let id = getIdProduct();
+    if (!!cartStorage[id]) {
+        return true;
+    } else {
+        return false;
+    }
+}
