@@ -244,3 +244,13 @@ function caculatorCart() {
     });
     return info;
 }
+
+function buyToCart() {
+      if (!checkIssetInCart()) {
+        cartStorage[getIdProduct()] = {name: productInfo.name, price: productInfo.price, image: "", quantity: 1};
+    } else {
+        ++cartStorage[getIdProduct()].quantity;
+    }
+    window.localStorage.setItem('cart', JSON.stringify(cartStorage));
+    location.replace("/cart.html");
+}
