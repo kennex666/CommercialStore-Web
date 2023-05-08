@@ -2,14 +2,14 @@ const $ = document;
 var e1;
 var catchEventLearnMore;
 var numberInCart = 0;
-
+var productInfo = {};
 var cartStorage = window.localStorage.getItem('cart');
 if (!cartStorage)
     cartStorage = [];
 else {
     cartStorage = JSON.parse(cartStorage);
     cartStorage.forEach(element => {
-        if (element > 0)
+        if (element && element.quantity > 0)
             numberInCart++;
     });
 }
@@ -82,11 +82,11 @@ function loadDataProduct(urlAPI) {
     fetch(urlAPI).then((response) => {
         return response.json();
     }).then((data) => {
-            data.title = data.title.split(' ');
+        data.title = data.title.split(' ');
             // get 5 word and join ' '
-            data.title = data.title.slice(0, 6);
+        data.title = data.title.slice(0, 6);
 
-            data.title = data.title.join(' ');
+        data.title = data.title.join(' ');
         elem = $.getElementsByClassName('productDestitle')
         for ( i = 0; i < elem.length; i++ ) {
             elem[i].innerHTML = data.title;
@@ -94,7 +94,8 @@ function loadDataProduct(urlAPI) {
         $.getElementById('countReview').innerHTML = data.rating.count;
         $.getElementById('priceProduct').innerHTML = "ADE $" + data.price;
         
-        
+        productInfo.name = data.title;
+        productInfo.price = data.price;
     }).catch((err) => {
         console.log(err);
     });
@@ -112,6 +113,9 @@ window.onload = () => {
         let id = getIdProduct()
         loadDataProduct('https://fakestoreapi.com/products/' + id);
         fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
+    } else if (window.location.pathname === '/cart.html') {
+        fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
+        cartPageDisplay()
     }
 
     if (numberInCart > 0) {
@@ -140,15 +144,16 @@ function addToCart() {
         div.style.display = "flex";
         ++numberInCart;
     }
-    addToCart();
+    addToCartStg();
 
 }
 
-function addToCart() {
+function addToCartStg() {
+
     if (!checkIssetInCart()) {
-        cartStorage[getIdProduct()] = 1;
+        cartStorage[getIdProduct()] = {name: productInfo.name, price: productInfo.price, image: "", quantity: 1};
     } else {
-        ++cartStorage[getIdProduct()];
+        ++cartStorage[getIdProduct()].quantity;
     }
     window.localStorage.setItem('cart', JSON.stringify(cartStorage));
     alert("Add to cart successfully");
@@ -161,4 +166,81 @@ function checkIssetInCart() {
     } else {
         return false;
     }
+}
+
+function cartPageDisplay() {
+    let cart = $.getElementById('addCart');
+
+    if (numberInCart == 0) {
+        let product = $.createElement('div');
+        product.classList = 'cart__body';
+        product.innerHTML = '<p><h2>Cart is empty</h2> </div>';
+        cart.appendChild(product);
+    } else {
+        let i = 0;
+        cartStorage.forEach((item) => {
+            if (item == null) {
+                i++; return;
+            }
+            let product = $.createElement('div');
+            product.classList = 'cart__body';
+            product.setAttribute('data-id', i);
+            product.setAttribute('name', "product-in-cart");
+            product.innerHTML = '<input type="checkbox"> <img src="img/product/mac-1.png" alt="" srcset=""> <div class="cart__body__info"> <h2>' + item.name + '</h2> <h3>Core i5 - 1.6 GHz - SSD 64GB - RAM 2GB</h3> </div> <div class="cart__body__info"> <input type="number" value="'+ item.quantity +'"> </div> <div class="cart__body__info"> <p class="p-price-product" dir="rtl">$'+ item.price * item.quantity +'</p> </div> <div class="cart__body__info"> <button onclick="editCart('+ i +')" class="btn btn-decor-ograngebg">Edit</button> </div>';
+            cart.appendChild(product);
+            i++;
+        })
+        let product = $.createElement('div');
+            product.classList = 'cart__body';
+            product.setAttribute('data-id', i);
+            product.setAttribute('name', "product-in-cart");
+            let info = caculatorCart();
+            product.innerHTML = '<p> </p> <p></p> <p> </p> <p id="quantityTotal">'+info.quantity+'</p> <p id="priceTotal">$'+ info.price + '</p> <button onclick="buyProduct()" class="btn btn-decor-ograngebg">Buy</button>';
+            cart.appendChild(product);
+            i++;
+    }
+
+}
+
+function editCart(idProduct) {
+    list = $.getElementsByName('product-in-cart');
+    for (i = 0; i < list.length; i++) {
+        if (list[i].getAttribute('data-id') == idProduct) {
+            numberProduct = list[i].getElementsByTagName('input')[1].value;
+            if (numberProduct <= 0) {
+                list[i].remove();
+                cartStorage[idProduct] = null;
+            } else {
+                cartStorage[idProduct].quantity = numberProduct;
+                list[i].getElementsByClassName('p-price-product')[0].innerHTML = '$' + cartStorage[idProduct].price * numberProduct;
+            }
+            window.localStorage.setItem('cart', JSON.stringify(cartStorage));
+            let info = caculatorCart();
+
+            $.getElementById('quantityTotal').innerHTML = parseInt(info.quantity);
+            $.getElementById('priceTotal').innerHTML = '$' + info.price;
+            break;
+        }
+    }
+}
+
+function buyProduct() {
+    let info = caculatorCart();
+    alert("You have to pay $" + info.price + " for " + info.quantity + " products! Thanks for purcharsing!");
+    window.localStorage.removeItem('cart');
+    location.reload();
+}
+
+function caculatorCart() {
+    let info = {};
+    info.quantity = 0;
+    info.price = 0;
+    cartStorage.forEach((item) => {
+        if (item == null) {
+            return;
+        }
+        info.quantity += parseInt(item.quantity);
+        info.price += item.price * parseInt(item.quantity);
+    });
+    return info;
 }

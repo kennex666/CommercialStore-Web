@@ -2382,6 +2382,10 @@ ul.body-ul-item{
     margin-bottom: 10px;
 }
 
+.cart-wapper :last-child p {
+    padding-top: 6px;
+ }
+
 .cart__body__info h3 {
     font-size: small;
     font-weight: normal;
