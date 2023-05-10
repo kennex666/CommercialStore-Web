@@ -254,3 +254,14 @@ function buyToCart() {
     window.localStorage.setItem('cart', JSON.stringify(cartStorage));
     location.replace("/cart.html");
 }
+
+function changeOptionButton(name, id) {
+    let list = ($.getElementById(name)).getElementsByTagName('button');
+    for (let i = 0; i < list.length; i++) {
+        if (i != id)
+            list[i].style.borderColor = '#d7d3d3';
+        else 
+            list[i].style.borderColor = '#fe7b38';
+        list[i].style.backgroundColor = '#fff';
+    }
+}
