@@ -49,6 +49,9 @@
                 </div>
                 <!-- Right -->
                 <div class="header-bar__info-part">
+                    <div class="ico-header-res header-bar__nav-item">
+                        <a href="index.html"><img alt="Logo" src="img/logo.svg" width="140px" height="55px" /></a>
+                    </div>
                     <div class="header-bar__nav-item">
                         <a href="help.html">Help</a>
                     </div>
@@ -193,7 +196,7 @@
 
 
             <div class="product-info__full">
-                <div class="product-info__information">
+                <div class="product-info__information" id="information-product">
                     <div class="product-bar__sales-info">
                         <span>Ends in: </span><span>19:12:03</span>
                     </div>
@@ -218,28 +221,28 @@
                         </a>
                     </div>
                     <h3>Color</h3>
-                    <div class="product-info__information__review-bar__btn-bar">
-                        <button class="btn btn-decor-ograngeborder btn-xsmall-size btn-decor-border-ms hover-op06">Space gray</button>
-                        <button class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06 ">Sliver</button>
-                        <button class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06">Gold</button>
+                    <div class="product-info__information__review-bar__btn-bar" id="colorOption">
+                        <button onclick="changeOptionButton('colorOption', 0)" class="btn btn-decor-ograngeborder btn-xsmall-size btn-decor-border-ms hover-op06">Space gray</button>
+                        <button onclick="changeOptionButton('colorOption', 1)" class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06 ">Sliver</button>
+                        <button onclick="changeOptionButton('colorOption', 2)" class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06">Gold</button>
                     </div>
                     
                     <h3>Storage</h3>
-                    <div class="product-info__information__review-bar__btn-bar">
-                        <button class="btn btn-decor-ograngeborder btn-xsmall-size btn-decor-border-ms hover-op06">128 GB</button>
-                        <button class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06">256 GB</button>
-                        <button class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06">512 GB</button>
+                    <div class="product-info__information__review-bar__btn-bar" id="storageOption">
+                        <button onclick="changeOptionButton('storageOption', 0)" class="btn btn-decor-ograngeborder btn-xsmall-size btn-decor-border-ms hover-op06">128 GB</button>
+                        <button onclick="changeOptionButton('storageOption', 1)" class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06">256 GB</button>
+                        <button onclick="changeOptionButton('storageOption', 2)" class="btn btn-decor-grayborder btn-xsmall-size btn-decor-border-ms hover-op06">512 GB</button>
                     </div>
                     
                     <h3>Condition</h3>
-                    <div class="product-info__information__review-bar__btn-bar">
-                        <button
+                    <div class="product-info__information__review-bar__btn-bar" id="conditionOption">
+                        <button onclick="changeOptionButton('conditionOption', 0)"
                             class="btn btn-decor-ograngeborder btn-padding-maxsize btn-decor-border-ms hover-op06 btn-colunm-center">Fair<span
                                 class="font-color-gray">AED 120</span></button>
-                        <button
+                        <button onclick="changeOptionButton('conditionOption', 1)"
                             class="btn btn-decor-grayborder btn-padding-maxsize btn-decor-border-ms hover-op06 btn-colunm-center">Good<span
                                 class="font-color-gray">AED 604</span></button>
-                        <button
+                        <button onclick="changeOptionButton('conditionOption', 2)"
                             class="btn btn-decor-grayborder btn-padding-maxsize btn-decor-border-ms hover-op06 btn-colunm-center">Excellent<span
                                 class="font-color-gray">AED 634</span></button>
                     </div>
