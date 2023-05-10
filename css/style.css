@@ -1264,7 +1264,7 @@ ul.leaders li{
 
 .product-info-desciption__left-ads {
     background-color: #fff;
-    padding: 0px 25px 0px 25px;
+    padding: 0px 23px 0px 23px;
     border-radius: 10px;
     margin-bottom: 30px;
     height: fit-content;
@@ -2377,7 +2377,7 @@ ul.body-ul-item{
 }
 
 .cart__body>img{
-    height: 90px;
+    width: 120px;
     padding: 5px;
     border: 0.5px solid #FD6B02;
     border-radius: 7px;
@@ -2427,10 +2427,11 @@ ul.body-ul-item{
     .brand-bar,
     .body-FAQ,
     .product-title-list,
-    #footer {
+    #footer,
+    .product-info-desciption__right,
+    .header-title__bar{
         display: none;
     }
-
     .ico-header-res img {
         display: flex;
     }
@@ -2628,6 +2629,49 @@ ul.body-ul-item{
         padding: 5% 5% 5% 5%;
     }
 
+    .product-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
 
+    .product-info__information {
+        margin: 30px 0px 25px 0px;
+        padding: 10px 35px 20px 35px;
+        flex-direction: column;
+    }
+    
+    .helpcenter-intro{
+        padding-right: 0px;
+    }
+
+    .helpcenter-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "A";
+        width: 100%;
+    }
+
+    .hc-input {
+        width: 94%;
+    }
+
+    .cart__body{
+        column-gap: 3%;
+        grid-template-columns: 0.2fr 1.5fr 4fr 1fr 1fr 1fr;
+    }
+
+    .cart__body img {
+        width: 50px;
+        height: auto;
+    }
+
+    .cart__body__info input{
+        width: 30px;
+    }
+
+    .cart__body__info h2 {
+        font-size: normal;
+        margin-bottom: 10px;
+    }
 
 }
