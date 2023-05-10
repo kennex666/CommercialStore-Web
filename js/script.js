@@ -132,7 +132,7 @@ function getIdProduct() {
     return id;
 }
 
-// cart feature
+// cart feature 
 function addToCart() {
     
     if (!checkIssetInCart()) { 
