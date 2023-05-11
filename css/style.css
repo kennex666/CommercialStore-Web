@@ -499,8 +499,12 @@ a.no-a-decor:hover {
 
 
 .slide-position{
-    top: 80px;
-    left: 80px;
+    top: 25%;
+    left: 5%;
+}
+
+.slide-position :last-child{
+    margin-top: 15%;
 }
 
 .btn-slide-right {
@@ -2428,6 +2432,12 @@ ul.body-ul-item{
         display: none;
     }
 
+    .slide-position :last-child{
+        margin-top: 15%;
+        font-size: small;
+        padding: 5% 5% 5% 5%;
+    }
+
     .cart__body{
         column-gap: 3%;
         grid-template-columns: 0.2fr 4fr 1fr 1fr 1fr;
@@ -2444,6 +2454,7 @@ ul.body-ul-item{
         margin-bottom: 68px;
         flex-direction: column;
     }
+
 
 }
 
@@ -2481,7 +2492,6 @@ ul.body-ul-item{
 @media only screen and (max-width: 1100px) {
     .header-bar__containter-nav-bar,
     .all-products-grid-left,
-    .slide,
     .brand-bar,
     .body-FAQ,
     .product-title-list,
@@ -2494,6 +2504,17 @@ ul.body-ul-item{
         display: flex;
     }
 
+    .text-slide{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .slide-position :last-child{
+        font-size: small;
+        margin-top: 0px;
+        padding: 2% 7% 2% 7%;
+    }
 
     .product-info-desciption{
         display: grid;
