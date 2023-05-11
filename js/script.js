@@ -174,6 +174,8 @@ function cartPageDisplay() {
     if (numberInCart == 0) {
         let product = $.createElement('div');
         product.classList = 'cart__body';
+        /* Not breaking line */
+        product.style.whiteSpace = 'nowrap';
         product.innerHTML = '<p><h2>Cart is empty</h2> </div>';
         cart.appendChild(product);
     } else {

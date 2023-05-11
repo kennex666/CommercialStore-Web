@@ -1086,7 +1086,7 @@ a.no-a-decor:hover {
 
 .product-info-desciption__left{
     background-color: #fff;
-    padding: 25px 25px 25px 25px;
+    padding: 5% 5% 5% 5%;
     border-radius: 10px;
     margin-bottom: 30px;
     height: fit-content;
@@ -1654,8 +1654,9 @@ ul.leaders li{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 30px;
-    row-gap: 5%;
-    column-gap: 5%;
+    row-gap: 15%;
+    column-gap: 15%;
+    width: 100%;
 }
 
 .about-us-center-all{
@@ -2420,6 +2421,63 @@ ul.body-ul-item{
     }
 }
 
+@media only screen and (max-width: 460px){
+    .header-bar__containter-info-bar :last-child :nth-child(4),
+    .product-info-desciption__left-ads,
+    .csrv__star-bar {
+        display: none;
+    }
+
+    .cart__body{
+        column-gap: 3%;
+        grid-template-columns: 0.2fr 4fr 1fr 1fr 1fr;
+    }
+
+    .cart__body img {
+        display: none;
+    }
+
+    .all_product--popular-button {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 68px;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+    .cart__body{
+        column-gap: 3%;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
+    }
+
+    .cart__body * { 
+        font-size: smaller;
+    }
+
+
+    .cart__body input[type="checkbox"] { 
+        display: none; 
+    }
+
+    .about-us__waper--item-center__main__divide{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 30px;
+        row-gap: 3%;
+        column-gap: 3%;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .header-bar__containter-info-bar :last-child :nth-child(3),
+    .card-review-ads, .body-categories{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     .header-bar__containter-nav-bar,
     .all-products-grid-left,
@@ -2434,6 +2492,13 @@ ul.body-ul-item{
     }
     .ico-header-res img {
         display: flex;
+    }
+
+
+    .product-info-desciption{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 25px;
     }
 
     .header-bar__containter-info-bar {
@@ -2604,7 +2669,6 @@ ul.body-ul-item{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
     }
 
     .blog-bar {
@@ -2655,6 +2719,10 @@ ul.body-ul-item{
         width: 94%;
     }
 
+    .cart{
+        margin-top: 10%;
+    }
+    
     .cart__body{
         column-gap: 3%;
         grid-template-columns: 0.2fr 1.5fr 4fr 1fr 1fr 1fr;
