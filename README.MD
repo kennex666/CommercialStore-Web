@@ -9,9 +9,13 @@ Any complaints please contact [the author of this template at here](https://www.
     2. Hoàng Thanh Dũng - Student code: 21123041.
 - Team's name: DeadlineRunner (A.k.a DR Team)
 - Summary purpose about project: For education.
-## The language/technology
+## The technologies, applications, libraries used whole project
 1. HTML
 2. CSS
 3. JavaScript
+4. Visual Studio Code
+5. Figma
+6. Fake Store API
+7. GitHub & Git
 ## The rules apply for student team
 [Click here to read](RULES.MD)
