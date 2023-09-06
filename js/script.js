@@ -113,7 +113,7 @@ window.onload = () => {
         let id = getIdProduct()
         loadDataProduct('https://fakestoreapi.com/products/' + id);
         fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
-    } else if (window.location.pathname..indexOf('/cart.html') !== -1) {
+    } else if (window.location.pathname.indexOf('/cart.html') !== -1) {
         fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
         cartPageDisplay()
     }
