@@ -102,18 +102,18 @@ function loadDataProduct(urlAPI) {
 }
 
 window.onload = () => {
-    if (window.location.pathname === '/allproducts.html') {
+    if (window.location.pathname.indexOf('/allproducts.html') !== -1) {
         fetchAPIProduct('https://fakestoreapi.com/products', 8, "loadProductAll", true);
         fetchAPIProduct('https://fakestoreapi.com/products/category/jewelery', 4, "theBestForYou-product", false);
         fetchAPIProduct('https://fakestoreapi.com/products', 8, "loadBestSeller", false);
-    } else if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    } else if (window.location.pathname.indexOf('/') !== -1) || window.location.pathname.indexOf('/index.html')!== -1)) {
         fetchAPIProduct('https://fakestoreapi.com/products', 8, "recommendLoad", false);
         fetchAPIProduct('https://fakestoreapi.com/products/category/jewelery', 4, "loadBestSeller", false);
-    } else if (window.location.pathname === '/product.html') {
+    } else if (window.location.pathname.indexOf('/product.html') !== -1) {
         let id = getIdProduct()
         loadDataProduct('https://fakestoreapi.com/products/' + id);
         fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
-    } else if (window.location.pathname === '/cart.html') {
+    } else if (window.location.pathname..indexOf('/cart.html') !== -1) {
         fetchAPIProduct('https://fakestoreapi.com/products', 4, "recommendLoad", false);
         cartPageDisplay()
     }
