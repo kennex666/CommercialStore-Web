@@ -106,7 +106,7 @@ window.onload = () => {
         fetchAPIProduct('https://fakestoreapi.com/products', 8, "loadProductAll", true);
         fetchAPIProduct('https://fakestoreapi.com/products/category/jewelery', 4, "theBestForYou-product", false);
         fetchAPIProduct('https://fakestoreapi.com/products', 8, "loadBestSeller", false);
-    } else if (window.location.pathname.indexOf('/') !== -1) || window.location.pathname.indexOf('/index.html')!== -1)) {
+    } else if (window.location.pathname.indexOf('/') !== -1 || window.location.pathname.indexOf('/index.html') !== -1) {
         fetchAPIProduct('https://fakestoreapi.com/products', 8, "recommendLoad", false);
         fetchAPIProduct('https://fakestoreapi.com/products/category/jewelery', 4, "loadBestSeller", false);
     } else if (window.location.pathname.indexOf('/product.html') !== -1) {
